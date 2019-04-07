@@ -22,15 +22,23 @@ body {
 .wrapper {
     max-width: 600px;
     height: 540px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     padding: 20px 0 0 0;
     background-color: #455A64;
     box-shadow: 6px 6px 30px -6px rgba(0, 0, 0, 0.75);
 }
 
+
+
+@media (min-width: 415px) {
+    .wrapper {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 .title {
     text-align: center;
@@ -53,14 +61,23 @@ body {
 .select-option i {
     font-size: 5rem;
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
     margin: 10px;
     overflow: hidden;
     cursor: pointer;
     color: #607D8B;
     font-weight: lighter;
+}
+
+
+@media (min-width: 411px) {
+    .select-option i {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
 }
 
 .select-option i:nth-child(1) {
@@ -166,8 +183,6 @@ body {
 .start:hover {
     background-color: #FFFFFF;
     color: #FF5722;
-
-
 }
 
 .start:focus {
@@ -179,16 +194,14 @@ body {
     display: flex;
     justify-content: center;
     background: #607D8B;
-
 }
 
 .panel-left,
 .panel-right {
-    margin: 50px 20px;
+    margin: 30px 20px;
     text-align: left;
     width: 270px;
     color: #CFD8DC;
-
 }
 
 .panel-right p span {
